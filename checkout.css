@@ -1,0 +1,278 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #E23E57;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.icons i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Main */
+.checkout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .payment-info, .summary {
+    width: 32%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info h2, .payment-info h2, .summary h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info form, .payment-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info input, .payment-info input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.payment-info .saved-card, .payment-info .new-card {
+    margin-bottom: 10px;
+}
+
+.payment-info label {
+    display: flex;
+    align-items: center;
+}
+
+.payment-info label img {
+    margin-right: 10px;
+}
+
+.summary .items {
+    margin-bottom: 20px;
+}
+
+.summary .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.summary .item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.summary .item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary .item-details p {
+    margin-bottom: 5px;
+}
+
+.summary .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.summary .quantity input {
+    width: 40px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.pricing p, .apply-discount {
+    margin-bottom: 10px;
+}
+
+.apply-discount {
+    display: flex;
+    align-items: center;
+}
+
+.apply-discount input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.complete-payment {
+    width: 100%;
+    padding: 15px;
+    background-color: #E23E57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .checkout-details {
+        flex-direction: column;
+    }
+
+    .contact-info, .payment-info, .summary {
+        width: 100%;
+    }
+
+    .search-cart input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav.open {
+        display: flex; /* Show the nav when open class is added */
+    }
+
+    .nav a {
+        margin: 10px 0;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger on smaller screens */
+    }
+
+    .search-cart {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .search-cart input {
+        max-width: 190px;
+        margin-bottom: 10px;
+        justify-content: left; 
+        margin-left: -15rem;
+        /* outline: solid red; */
+    }
+
+    .icons i {
+        margin-left: 0;
+        margin-right: 2px;
+    }
+
+    .hamburger {
+        display: block;
+        justify-content: end;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .hamburger.active + .nav {
+        display: flex;
+    }
+
+    .header{
+        justify-content: space-evenly;
+    }
+
+    .icons
+    {margin-left: -3rem;
+        margin-top: -2.3rem;
+    }
+
+    .logo{
+        margin-top: 3.5rem;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}

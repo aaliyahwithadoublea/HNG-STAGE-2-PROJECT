@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="./DASHSTEPS.png" alt="Logo"></div>
+        <nav class="nav" style="color: #E23E57;">
+            <a href="#">Listing Page</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search" style="width: 300px;">
+            <div class="icons">
+                <!-- <i class="fas fa-search"> -->
+                    <img src="search icon.png"></i>
+                <!-- <i class="fas fa-heart"> -->
+                    <img src="love icon.png"></i>
+                <!-- <i class="fas fa-shopping-cart"> -->
+                    <img src="cart icon.png"></i>
+            </div>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Cart</h1>
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <span class="step-label">Shopping Cart</span>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <span class="step-label">Checkout Details</span>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="product">
+                        <div></div>
+                        <img src="yeezy.png" alt="Minimus Trail">
+                        <div class="product-details">
+                            <span>Minimus Trail</span>
+                            <span>Men's Hiking Shoe</span>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <span class="count">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <div class="price">₦50,000</div>
+                    <div class="subtotal">₦50,000</div>
+                </div>
+                <div class="cart-item">
+                    <div class="product">
+                        <img src="puma.png" alt="Nike Dunk Low">
+                        <div class="product-details">
+                            <span>Nike Dunk Low</span>
+                            <span>Stylish Sneakers</span>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <span class="count">2</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <div class="price">₦21,000</div>
+                    <div class="subtotal">₦42,000</div>
+                </div>
+            </div>
+            <div class="summary">
+                <h2>Summary</h2>
+                <div>
+                    <input type="radio" id="pickup" name="delivery" value="pickup" checked>
+                    <label for="pickup">Pickup</label>
+                </div>
+                <div>
+                    <input type="radio" id="shipping" name="delivery" value="shipping">
+                    <label for="shipping">Shipping</label>
+                </div>
+                <div class="totals">
+                    <div>Subtotal: ₦92,000</div>
+                    <div>Total: ₦92,000</div>
+                </div>
+                <button class="checkout-button">Proceed to checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
