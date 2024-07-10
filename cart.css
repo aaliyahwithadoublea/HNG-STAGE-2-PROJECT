@@ -100,7 +100,7 @@ h1 {
     flex-direction: row;
     gap: 2rem;
     background-color: none;
-    /* border: none; */
+    border: none;
 }
 
 .cart-items {
