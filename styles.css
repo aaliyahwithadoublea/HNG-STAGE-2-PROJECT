@@ -244,6 +244,7 @@ form button:hover {
         position: absolute;
         top: 60px; /* Adjust this according to your layout */
         left: 0;
+        
     }
 
     .nav.open {
